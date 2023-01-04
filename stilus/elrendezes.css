@@ -1,0 +1,59 @@
+/**
+ * Tartalom:
+ *
+ * Grid.........................Grid elrendezés.
+ *    Képernyőigazítás..........Grid képenyőkhöz igazítás.
+ * Flex box...........Flexbox-al igazítás.
+ */
+
+
+
+/* ------------------------------ *\
+            Grid elrendezés
+\* ------------------------------ */
+
+.page {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "gta-logo1"
+      "gta-logo2"
+      "footer"
+}
+
+.header {    grid-area: header;}
+.nav {       grid-area: nav;}
+.content {   grid-area: content;}
+.gta-logo1 { grid-area: gta-logo1;}
+.gta-logo2 { grid-area: gta-logo2;}
+.footer {    grid-area: footer;}
+
+
+    /* ------------------------------ *\
+                Képernyőigazítás
+    \* ------------------------------ */
+
+
+    @media (min-width: 768px) {
+        .page {
+         grid-template-columns: 1fr 4fr 1fr;
+          grid-template-areas: 
+            "header    header  header"
+            "nav       content gta-logo2"
+            "gta-logo1 content gta-logo2"
+            "footer    footer  footer"
+        }
+    }
+
+
+
+/* ------------------------------ *\
+              Flex box
+\* ------------------------------ */
+
+.header {  
+    display:         flex;
+    justify-content: center;
+}

@@ -1,0 +1,162 @@
+/**
+ * Fájlok tartalma:
+ *
+ * reset.css................CSS reset.
+ * alapstilus.css...........Általános szabályok.
+ * elrendezes.css...........Elrendezések.
+ * osszetevok).css..........Megjelenítések.
+ */
+
+
+/**
+ * Tartalom:
+ *
+ * variáns színek..........Változó, színek.
+ * Box-size................"box-sizing".
+ * Háttérszínek............Háttérszínek var-ban megadva.
+ * Margók..................Margó-, Padding értékek.
+ * Betűformázás............Betűk értékei
+ *   Heading-k.............H1-H2 értékek.
+ * Kép méretezés...........Kép értékek.
+ *   Képernyőigazítás......Képernyő méretek.
+ * Link....................Linkek formázása.
+ */
+
+
+/* ------------------------------ *\
+            variáns színek
+\* ------------------------------ */
+
+:root {
+    --fohatter:    #9c9595;
+    --gombok:      #9BB0AD;
+    --logo-hatter :#5A5F69;
+    --content :    #7F7F7F;
+    --gomb-felirat:#000;
+}
+
+
+
+/* ------------------------------ *\
+            Box-size
+\* ------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------ *\
+            Háttérszínek
+\* ------------------------------ */
+
+nav {                    background-color: var(--logo-hatter);}
+.btn{                    background-color: var(--gombok);}
+.header {                background-color: var(--fohatter);}
+.content{                background-color: var(--content);}
+.gta-logo1, .gta-logo2 { background-color: var(--logo-hatter) ;}
+.footer {                background-color: var(--fohatter);}
+
+
+
+/* ------------------------------ *\
+                Margók
+\* ------------------------------ */
+
+.btn{
+    padding: 5px;
+    margin:  8px 0;
+  }
+  
+  @media (min-width: 768px) {
+      .btn {border-radius: 30px; }
+}
+
+.gta-logo1, .gta-logo2 {
+    padding: 5px;
+}
+
+
+/* ------------------------------ *\
+            Betűformázás
+\* ------------------------------ */
+
+.footer {
+    font-size: small;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:   1.1rem;
+}
+
+  /* ------------------------------ *\
+              Heading-k
+  \* ------------------------------ */
+
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:   2.2rem;
+  }
+
+  h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:   1.5rem;
+  }
+
+
+/* ------------------------------ *\
+            Kép méretezés
+\* ------------------------------ */
+
+.btn{
+    width:   100%;
+    height:  50px;
+}
+
+.fo-logo {
+    width:  70px;
+    height: 70px;
+    margin: 5px;
+}
+
+img {
+    width:  150px;
+    height: 150px;
+}
+
+
+    /* ------------------------------ *\
+                Képernyőigazítás
+    \* ------------------------------ */
+    @media (min-width: 470px) {
+        .gta2logo {
+            width:  300px;
+            height: 150px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .gta2logo {
+            width:  150px;
+            height: 150px;
+        }
+    }
+    
+    @media (min-width: 1500px) {
+    
+        img, .gta2logo {
+            width:  300px;
+            height: 300px;
+        }
+    }
+
+/* ------------------------------ *\
+               Link
+\* ------------------------------ */
+
+nav a {
+    text-decoration: none;
+    color:           var(--gomb-felirat);
+    display:         block;
+}
