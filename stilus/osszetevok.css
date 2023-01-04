@@ -42,13 +42,25 @@
     animation: auto 10s ease-in .1s infinite ;
   }
   
+  
   @keyframes auto {
-      0% {left:   1%; transform: scaleX(1);}
-      25% {left: 90%; transform: scaleX(1);}
-      50% {left: 90%; transform: scaleX(-1);}
-      75% {left:  1%; transform: scaleX(-1);}
-      100% {left: 1%; transform: scaleX(1);}    
+    0% {left:   1%; transform: scaleX(1);}
+    25% {left: 85%; transform: scaleX(1);}
+    50% {left: 85%; transform: scaleX(-1);}
+    75% {left:  1%; transform: scaleX(-1);}
+    100% {left: 1%; transform: scaleX(1);}    
 }
+  /* ------------------------------ *\
+              Képernyőigazítás
+  \* ------------------------------ */
+  
+    @keyframes auto {
+        0% {left:   1%; transform: scaleX(1);}
+        25% {left: 90%; transform: scaleX(1);}
+        50% {left: 90%; transform: scaleX(-1);}
+        75% {left:  1%; transform: scaleX(-1);}
+        100% {left: 1%; transform: scaleX(1);}    
+    }
 
 
 
