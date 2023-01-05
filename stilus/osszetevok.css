@@ -1,10 +1,36 @@
 /**
  * Tartalom:
  *
+ * Gombok...................Gombértékek.
  * Logók mozgása..........Forgó logók.
  * Autó mozgása...........Mozgó autó a footerban.
  * Beágyazott oldal.......A többioldal tartalma itt jelenik meg (content).
  */
+
+
+
+/* ------------------------------ *\
+               Gombok
+\* ------------------------------ */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-size: .9rem;
+    color: rgb(210, 223, 35);
+    padding: 6px;
+    margin: 15px 0;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 768px) {
+      .btn {
+      border-radius: 13px;
+      }
+    }
+
+
 
 /* ------------------------------ *\
             Logók mozgása
@@ -45,24 +71,11 @@
   
   @keyframes auto {
     0% {left:   1%; transform: scaleX(1);}
-    25% {left: 85%; transform: scaleX(1);}
-    50% {left: 85%; transform: scaleX(-1);}
+    25% {left: calc(100% - 60px); transform: scaleX(1);}
+    50% {left: calc(100% - 60px); transform: scaleX(-1);}
     75% {left:  1%; transform: scaleX(-1);}
     100% {left: 1%; transform: scaleX(1);}    
 }
-  /* ------------------------------ *\
-              Képernyőigazítás
-  \* ------------------------------ */
-  
-    @keyframes auto {
-        0% {left:   1%; transform: scaleX(1);}
-        25% {left: 90%; transform: scaleX(1);}
-        50% {left: 90%; transform: scaleX(-1);}
-        75% {left:  1%; transform: scaleX(-1);}
-        100% {left: 1%; transform: scaleX(1);}    
-    }
-
-
 
 /* ------------------------------ *\
           Beágyazott oldal

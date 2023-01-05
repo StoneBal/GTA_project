@@ -53,7 +53,7 @@
               Flex box
 \* ------------------------------ */
 
-.header {  
+.header, h1 {  
     display:         flex;
     justify-content: center;
 }
